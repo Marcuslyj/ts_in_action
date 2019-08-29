@@ -9,5 +9,7 @@
     "extends": [
         "plugin:@typescript-eslint/recommended"
     ],
-    "rules": {}
+    "rules": {
+        "@typescript-eslint/no-inferrable-types": "off"
+    }
 }
