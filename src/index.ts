@@ -1,5 +1,5 @@
 let str1: string = 'hello'
-
+str1 =1
 document.write(str1)
 
 class A {
