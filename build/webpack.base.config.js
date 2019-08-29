@@ -13,7 +13,11 @@ module.exports = {
             {
                 test: /\.tsx?$/i,
                 use: [{
-                    loader: 'ts-loader'
+                    loader: 'ts-loader',
+                    options: {
+                        // 只做语言转换，不做类型检查，（缺点也是不做类型检查）
+                        transpileOnly: true
+                    }
                 }],
                 exclude: /node_modules/
             }
