@@ -37,3 +37,36 @@ const enum Month {
     Feb
 }
 // 枚举类型
+
+
+
+
+
+
+
+
+abstract class Animal {
+    name: string
+    constructor(name: string) {
+        this.name = name
+    }
+    run(): void {
+        console.log("run");
+    }
+    abstract sleep(): void
+
+
+}
+
+console.log('====================================');
+console.log(Animal.prototype);
+console.log('====================================');
+
+class Dog extends Animal {
+    constructor(name: string) {
+        super(name)
+    }
+    sleep(): number {
+        return 1
+    }
+}
