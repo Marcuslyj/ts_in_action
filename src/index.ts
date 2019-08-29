@@ -1,6 +1,6 @@
-let str: string = 'hello'
+let str1: string = 'hello'
 
-document.write(str)
+document.write(str1)
 
 
 
