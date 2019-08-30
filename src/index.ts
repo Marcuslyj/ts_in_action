@@ -1,5 +1,5 @@
 let str1: string = 'hello'
-str1 =1
+// str1 =1
 document.write(str1)
 
 class A {
@@ -15,6 +15,13 @@ class A {
 let a: A = new A('red')
 console.log(a);
 console.log(A.prototype);
+
+
+import math from './math'
+
+console.log('====================================');
+console.log(math);
+console.log('====================================');
 
 
 
