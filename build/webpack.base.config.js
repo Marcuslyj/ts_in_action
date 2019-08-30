@@ -3,9 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CheckerPlugin } = require('awesome-typescript-loader')
 
 module.exports = {
-    entry: './src/index.tsx',
+    entry: {
+        app: './src/index.tsx'
+    },
     output: {
-        filename: 'app.js'
+        filename: 'app.[chunkhash:8].js'
     },
     resolve: {
         extensions: ['.js', '.ts', '.tsx']
@@ -32,5 +34,10 @@ module.exports = {
         }),
         // new ForkTsCheckerWebpackPlugin(),
         new CheckerPlugin()
-    ]
+    ],
+    optimization: {
+        splitChunks: {
+            chunks: 'all'
+        }
+    }
 }

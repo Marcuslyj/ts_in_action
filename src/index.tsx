@@ -29,7 +29,7 @@ import ReactDOM from 'react-dom'
 import Hello from './components/demo/Hello'
 
 ReactDOM.render(
-    <Hello name="ts" />,
+    <Hello name="ts1" />,
     document.querySelector('.app')
 )
 
